@@ -19,8 +19,8 @@ enum type{
 
 public class fullbright extends Module {
     public static final KeybindSetting keybindSetting = new KeybindSetting("Keybind", "keybind", "Keybind for module", ()->true, Keyboard.KEY_NONE);
-    private static final Enum type = live.ggclient.ggclient.module.VISUAL.fullbright.type;
-    public static final EnumSetting enumSetting = new EnumSetting("Type", "type", "Ded", ()->true, type, type.getClass());
+//    private static final Enum type = live.ggclient.ggclient.module.VISUAL.fullbright.type;
+//    public static final EnumSetting enumSetting = new EnumSetting("Type", "type", "Ded", ()->true, type, type.getClass());
     public live.ggclient.ggclient.module.VISUAL.fullbright instance;
     public Minecraft mc = Minecraft.getMinecraft();
     // previous brightness info
@@ -37,15 +37,15 @@ public class fullbright extends Module {
         MinecraftForge.EVENT_BUS.register(instance);
     }
 
-//    @SubscribeEvent
-//    public void onPlayerTick(TickEvent.PlayerTickEvent event) {
-//        if(instance.isEnabled().isOn() && ) {
-//            mc.player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION.setPotionName("FullBright"), 80950, 1, false, false));
-//
-//        } else if (!instance.isEnabled().isOn()) {
-//            mc.player.removePotionEffect(MobEffects.NIGHT_VISION);
-//        }
-//    }
+    @SubscribeEvent
+    public void onPlayerTick(TickEvent.PlayerTickEvent event) {
+        if(instance.isEnabled().isOn()) {
+            mc.player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION.setPotionName("FullBright"), 80950, 1, false, false));
+
+        } else if (!instance.isEnabled().isOn()) {
+            mc.player.removePotionEffect(MobEffects.NIGHT_VISION);
+        }
+    }
 
 }
 
