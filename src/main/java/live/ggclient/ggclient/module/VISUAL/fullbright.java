@@ -31,7 +31,7 @@ public class fullbright extends Module {
     public fullbright() {
         super("Fullbright", "Allows you to see in the dark.", ()->true, true);
         settings.add(keybindSetting);
-        settings.add(enumSetting);
+//        settings.add(enumSetting);
 
         instance = this;
         MinecraftForge.EVENT_BUS.register(instance);
