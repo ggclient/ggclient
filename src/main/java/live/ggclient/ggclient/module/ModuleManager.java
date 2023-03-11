@@ -2,10 +2,9 @@ package live.ggclient.ggclient.module;
 
 import com.lukflug.module.*;
 import com.lukflug.setting.KeybindSetting;
-import live.ggclient.ggclient.GGClient;
 import live.ggclient.ggclient.module.MOVEMENT.Speed;
 import live.ggclient.ggclient.module.MOVEMENT.Sprint;
-import live.ggclient.ggclient.module.VISUAL.fullbright;
+import live.ggclient.ggclient.module.VISUAL.Fullbright;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
@@ -27,8 +26,8 @@ public class ModuleManager {
         Category.OTHER.modules.add(new ClickGUIModule());
         Category.OTHER.modules.add(new HUDEditorModule());
 
-        //Render
-        Category.VISUAL.modules.add(new fullbright());
+        // VISUAL
+        Category.VISUAL.modules.add(new Fullbright());
 
         // HUD
         Category.HUD.modules.add(new LogoModule());
