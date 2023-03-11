@@ -30,7 +30,6 @@ public class GGClient
     public void preInit (FMLPreInitializationEvent event) {
         logger = event.getModLog();
     }
-    //nigger
     @EventHandler
     public void init (FMLInitializationEvent event) {
         ModuleManager mm = new ModuleManager();
