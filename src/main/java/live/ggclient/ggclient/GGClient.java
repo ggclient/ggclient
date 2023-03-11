@@ -26,7 +26,7 @@ public class GGClient
 
     public static Logger logger;
     public static ClickGUI clickGui;
-
+    //nigger
     @EventHandler
     public void preInit (FMLPreInitializationEvent event) {
         logger = event.getModLog();
