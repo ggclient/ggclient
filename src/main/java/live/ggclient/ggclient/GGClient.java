@@ -33,7 +33,6 @@ public class GGClient
     @EventHandler
     public void init (FMLInitializationEvent event) {
         ModuleManager mm = new ModuleManager();
-    // I like Men - @autumn
         clickGui = new ClickGUI();
         MinecraftForge.EVENT_BUS.register(this);
     }
