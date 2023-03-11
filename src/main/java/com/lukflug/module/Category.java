@@ -24,7 +24,7 @@ public enum Category implements ICategory {
     MISCELLANEOUS("Miscellaneous"),
     MOVEMENT("Movement"),
     OTHER("Other"),
-    RENDER("Render"),
+    VISUAL("Visual"),
     WORLD("World");
 
     public final String displayName;

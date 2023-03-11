@@ -5,6 +5,7 @@ import com.lukflug.setting.KeybindSetting;
 import live.ggclient.ggclient.GGClient;
 import live.ggclient.ggclient.module.MOVEMENT.Speed;
 import live.ggclient.ggclient.module.MOVEMENT.Sprint;
+import live.ggclient.ggclient.module.VISUAL.fullbright;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
@@ -26,6 +27,9 @@ public class ModuleManager {
         Category.OTHER.modules.add(new ClickGUIModule());
         Category.OTHER.modules.add(new HUDEditorModule());
 
+        //Render
+        Category.VISUAL.modules.add(new fullbright());
+
         // HUD
         Category.HUD.modules.add(new LogoModule());
 
@@ -41,7 +45,7 @@ public class ModuleManager {
         Category.OTHER.getModules().forEach(module -> { toReturn.add((Module) module); });
         Category.EXPLOITS.getModules().forEach(module -> { toReturn.add((Module) module); });
         Category.MISCELLANEOUS.getModules().forEach(module -> { toReturn.add((Module) module); });
-        Category.RENDER.getModules().forEach(module -> { toReturn.add((Module) module); });
+        Category.VISUAL.getModules().forEach(module -> { toReturn.add((Module) module); });
         Category.WORLD.getModules().forEach(module -> { toReturn.add((Module) module); });
 
         return toReturn;
