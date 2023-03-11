@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 import org.lwjgl.input.Keyboard;
 
 public class Speed extends Module {
-    public static final DoubleSetting speedSetting = new DoubleSetting("Speed", "speed", "Multiplier of speed", ()->true, 1, 5, 1.5);
+    public static final DoubleSetting speedSetting = new DoubleSetting("Speed", "speed", "Multiplier of speed", ()->true, 0.1, 5, 1.0);
     public static final KeybindSetting keybindSetting = new KeybindSetting("Keybind", "keybind", "Keybind for module", ()->true, Keyboard.KEY_NONE);
 
     public Speed instance;
