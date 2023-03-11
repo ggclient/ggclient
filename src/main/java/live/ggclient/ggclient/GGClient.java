@@ -19,16 +19,13 @@ public class GGClient {
 
     public static Logger logger;
     public static ClickGUI clickGui;
-
     @EventHandler
     public void preInit (FMLPreInitializationEvent event) {
         logger = event.getModLog();
     }
-
     @EventHandler
     public void init (FMLInitializationEvent event) {
         ModuleManager mm = new ModuleManager();
-
         clickGui = new ClickGUI();
         MinecraftForge.EVENT_BUS.register(this);
     }
