@@ -188,7 +188,7 @@
 
    Copyright 2023:
 
-      Matthew Harris <matth08@proton.me>
+      FunkyEgg <matth08@proton.me>
       SoulFaust <soulfaust2b2t@gmail.com>
 
    Licensed under the Apache License, Version 2.0 (the "License");

@@ -42,6 +42,7 @@ public class Sprint extends Module {
             } else if (modeSetting.getValue() == Modes.Omni) {
                 return;
                 // TODO Implement omni sprint
+
             }
         }
     }
